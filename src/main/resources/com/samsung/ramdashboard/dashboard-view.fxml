@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.samsung.ramdashboard.DashboardViewController">
+    <children>
+<!--        <ChoiceBox fx:id="frequencyChoice" layoutX="660.0" layoutY="31.0" prefHeight="22.0" prefWidth="66.0" />-->
+      <LineChart fx:id="systemChart" animated="false" layoutX="47.0" layoutY="80.0" prefHeight="332.0" prefWidth="665.0" title="Sytem Memory Usage">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="51.0" layoutY="33.0" text="System Memory">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+<!--      <Label layoutX="595.0" layoutY="35.0" text="Frequency" />-->
+    </children>
+</AnchorPane>
